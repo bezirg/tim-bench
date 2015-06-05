@@ -1,0 +1,18 @@
+name:                  tim-bench
+version:               0.0.1
+synopsis:              benchmarking the timsort in Haskell
+description:           benchmarking the timsort in Haskell
+author:                Nikolaos Bezirgiannis
+maintainer:            NikolaosBezirgiannis <bezirgia@cwi.nl>
+stability:             provisional
+build-type:            Simple
+cabal-version:         >= 1.10
+
+executable tim-bench
+  main-is:            Bench.hs
+  build-depends:      base,
+                      vector,
+                      vector-algorithms >= 0.7,
+                      criterion >= 1.1,
+                      text
+
